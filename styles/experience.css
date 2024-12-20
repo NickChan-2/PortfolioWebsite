@@ -1,0 +1,53 @@
+
+.experience-section{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course{
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  gap: 15px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.course-header{
+  font-size: 14px;
+  text-align: left;
+  text-align: top;
+  flex: 0 0 118px;
+  margin: 0px;
+}
+
+.info-section{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  gap: 8px;
+}
+.info{
+  text-align: left;
+  margin: 0px;
+  flex: 1;
+}
+
+.course:hover{
+  background-color: rgba(211, 211, 211, .2);
+  border-radius: 5px;
+}
+
+.skills-section{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.skill{
+  padding: 3px 7px;
+  border-radius: 20px;
+  color: #1ddaca;
+  background-color: rgba(110, 251, 239, 0.3);
+}
