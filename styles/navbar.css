@@ -1,0 +1,42 @@
+.nav-links {
+  list-style: none;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between items */
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Roboto;
+}
+
+.nav-links li {
+  display: flex; /* Ensures children are laid out horizontally */
+  align-items: center; /* Aligns the indicator with the text */
+}
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(232, 230, 227, 0.8); /* 80% opacity */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Transition for text color */
+}
+
+.nav-indicator {
+  width: 32px;
+  height: 1px;
+  margin-right: 16px;
+  background-color: rgba(232, 230, 227, 0.8);
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Transition for width, height, and color */
+}
+
+.nav-links li a:hover .nav-indicator {
+  width: 64px; /* New width on hover */
+  height: 2px; /* New height on hover */
+  background-color: #E8E6E3; /* New background color on hover */
+}
+
+.nav-links li a:hover .nav-name {
+  color: #E8E6E3; /* Change text color on hover */
+}

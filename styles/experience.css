@@ -12,6 +12,7 @@
   gap: 15px;
   padding: 5px;
   margin: 0px;
+  font-family: Poppins, Roboto;
 }
 
 .course-header{
@@ -20,6 +21,8 @@
   text-align: top;
   flex: 0 0 118px;
   margin: 0px;
+  color: rgba(232, 230, 227);
+  font-family: Poppins, Roboto;
 }
 
 .info-section{
@@ -27,6 +30,7 @@
   flex-direction: column;
   margin: 0px;
   gap: 8px;
+  font-family: Poppins, Roboto;
 }
 .info{
   text-align: left;
@@ -37,12 +41,14 @@
 .course:hover{
   background-color: rgba(211, 211, 211, .2);
   border-radius: 5px;
+  color: rgba(232, 230, 227, 0.8);
 }
 
 .skills-section{
   display: flex;
   flex-direction: row;
   gap: 6px;
+  font-family: Poppins, Roboto;
 }
 
 .skill{
