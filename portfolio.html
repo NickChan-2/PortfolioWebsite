@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <title>Portfolio</title>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/about.css"> <!--Connects to css style sheets-->
     <link rel="stylesheet" href="styles/header-section.css"> <!--Connects to css style sheets-->
     <link rel="stylesheet" href="styles/navbar.css"> <!--Connects to css style sheets-->
+    <link rel="stylesheet" href="styles/projects.css"> <!--Connects to css style sheets-->
   </head>
 
   <body>
@@ -24,29 +25,27 @@
           <h1 class="name">Nick Chan</h1>
           <h2 class="title">Computer Science Student</h2>
           <p>A student with motivation and dedication</p>
-          <nav>
-            <ul class="nav-links"> <!--unordered list-->
-              <li>
-                <a href="#about">
-                  <span class="nav-indicator"></span>
-                  <span class="nav-name">About</span>
-                </a>
-              </li> <!-- creates links to move to a section on the page -->
-              <li>
-                <a href="#experience">
-                  <span class="nav-indicator"></span>
-                  <span class="nav-name">Experience</span>
-                </a>
-              </li>
-              <li><a href="#projects">
-                  <span class="nav-indicator"></span>
-                  <span class="nav-name">Projects</span>
-                </a>
-              </li>
+
+          <nav role="navigation">
+            <ul class="nav-links">
+              <li><a href="#about" aria-label="About Section">
+                <span class="nav-indicator"></span>
+                <span class="nav-name">About</span>
+              </a></li>
+
+              <li><a href="#experience" aria-label="Projects Section">  
+                <span class="nav-indicator"></span>
+                <span class="nav-name">Experience</span>
+              </a></li>
+
+              <li><a href="#projects" aria-label="Contact Section">
+                <span class="nav-indicator"></span>
+                <span class="nav-name">Projects</span>
+              </a></li>
             </ul>
           </nav>
         </div>
-        <ul> <!--unordered list-->
+        <ul class="buttons-section"> <!--unordered list-->
           <button class="github-button">
             <!-- opens github tab in new page first ref, then target blank opens in neew tab-->
             <a href="https://github.com/YourGitHubProfile" target="_blank">
@@ -84,17 +83,17 @@
         </div>
           <div class="experience-section">
               <div class="course">
-                <h3 class="course-header">Calculus I & II</h3>
+                <h3 class="course-header">Calculus I & II (SDSU)</h3>
                 <div class="info-section">                
                   <p class="info">Acquired a strong foundation in differential and integral calculus, with practical applications in mathematical modeling and problem-solving.</p>
                   <div class="skills-section">
                     <div class="skill">C++</div>
                   </div>
                 </div>
-
               </div>
+
               <div class="course">
-                <h3 class="course-header">Programming Fundamentals</h3>
+                <h3 class="course-header">CSC 250 (SDSU)</h3>
                 <div class="info-section">
                   <p class="info">Learned essential programming concepts, including control structures, functions, and object-oriented programming, using the C++ language.</p>
                   <div class="skills-section">
@@ -104,7 +103,7 @@
 
               </div>
               <div class="course">
-                <h3 class="course-header">Data Structures and Algorithms</h3>
+                <h3 class="course-header">Data Structures and Algorithms (SDSU)</h3>
                 <div class="info-section">
                   <p class="info">Studied and implemented fundamental data structures such as binary trees, graphs, stacks, and queues. Gained proficiency in searching and sorting algorithms and memory management techniques.</p>
                   <div class="skills-section">
@@ -115,7 +114,7 @@
 
               </div>
               <div class="course">
-                <h3 class="course-header">HTML & CSS</h3>
+                <h3 class="course-header">HTML & CSS (self-study)</h3>
                 <div class="info-section">
                   <p class="info">Completed a course covering foundational and advanced topics in web design, creating responsive and visually engaging web pages.</p>
                   <div class="skills-section">
@@ -126,7 +125,7 @@
 
               </div>
               <div class="course">
-                <h3 class="course-header">JavaScript</h3>
+                <h3 class="course-header">JavaScript (self-study)</h3>
                 <div class="info-section">
                   <p class="info">Gained expertise in JavaScript fundamentals and advanced techniques for building dynamic and interactive web applications. Applied knowledge to create powerful and user-friendly websites.</p>
                   <div class="skills-section">
@@ -135,8 +134,23 @@
                 </div>
               </div>
           </div>
-          <ul>
-            projects
+          <ul class="project-list">
+              <li>
+              <div class="project-section">
+                <div class="img-section">                   
+                   <a href="https://brittanychiang.com/#about" target="_blank"> 
+                    <img src="projectimg/Screenshot 2024-12-23 at 6.32.59 PM.png" class="project-img">
+                  </a>
+                  
+                </div>
+                <div class="project-description">               
+                  <h3 class="project-title">
+                    <a href="https://brittanychiang.com/#about" target="_blank"> Portfolio website</a>
+                  </h3>
+                  <p class="info">Gained expertise in JavaScript fundamentals and advanced techniques for building dynamic and interactive web applications. Applied knowledge to create powerful and user-friendly websites.</p>
+                </div>
+              </div>
+              </li> <!-- creates links to move to a section on the page -->
           </ul>
         </div>
       </main>

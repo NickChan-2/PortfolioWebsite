@@ -4,6 +4,7 @@
   flex-direction: column; /* Stack items vertically */
   gap: 20px; /* Space between items */
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   font-family: Poppins, Roboto;
 }

@@ -3,13 +3,13 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 0;
+  margin-left: 0;
   padding: 96px 0px;
-  width: 46%;
+  width: 30%;
   height: 500px;
   justify-content: space-between;
   font-family: Poppins, Roboto;
-
+  background-color: #011709; /* Background color applied to the whole viewport */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -20,23 +20,49 @@
   flex-direction: column;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 52%;
-  padding: 96px 0px;
-  font-family: Poppins, Roboto;
-  gap: 50px;
-}
-
 .name{
   color: rgba(232, 230, 227);
+  font-size: 50px;
   margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
 }
 
 .title{
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
   color: rgba(232, 230, 227);
+  font-weight: 300;
 
+}
+
+
+.buttons-section{
+  align-items: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.github-logo, .linkedin-logo {
+  width: 20px; /* Adjust size */
+  height: 20px;
+  fill: rgba(232, 230, 227, 0.8);
+  transition: fill 0.3s ease;
+  margin-right: 10px;
+}
+
+.github-logo:hover, .linkedin-logo:hover {
+  fill:  rgba(232, 230, 227, 0.8);
+}
+
+.github-button, .linkedin-button {
+  background: transparent; /* Transparent button background */
+  border: none; /* Remove button border */
+  cursor: pointer;
+  padding: 0;
+}
+
+.github-button a, .linkedin-button a {
+  text-decoration: none;
 }

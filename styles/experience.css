@@ -42,6 +42,8 @@
   background-color: rgba(211, 211, 211, .2);
   border-radius: 5px;
   color: rgba(232, 230, 227, 0.8);
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  cursor: pointer;
 }
 
 .skills-section{
@@ -55,5 +57,6 @@
   padding: 3px 7px;
   border-radius: 20px;
   color: #2af134;
+  font-size: small;
   background-color: rgba(110, 251, 136, 0.3);
 }
