@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Calculus I & II",
-    "courseType": "SDSU",
+    "expType": "SDSU",
     "info": "Acquired a strong foundation in differential and integral calculus, with practical applications in mathematical modeling and problem-solving.",
     "skills": [
        "C++"
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "CSC 250",
-    "courseType": "SDSU",
+    "expType": "SDSU",
     "info": "Learned essential programming concepts, including control structures, functions, and object-oriented programming, using the C++ language.",
     "skills": [
        "C++"
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "title": "Data Structures and Algorithms",
-    "courseType": "SDSU",
+    "expType": "SDSU",
     "info": "Studied and implemented fundamental data structures such as binary trees, graphs, stacks, and queues. Gained proficiency in searching and sorting algorithms and memory management techniques.",
     "skills": [
        "C++"
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "title": "HTML & CSS",
-    "courseType": "self-study/youtube",
+    "expType": "self-study/youtube",
     "info": "Completed a course covering foundational and advanced topics in web design, creating responsive and visually engaging web pages.",
     "skills": [
        "HTML",
@@ -43,7 +43,7 @@
   {
     "id": 5,
     "title": "JavaScript",
-    "courseType": "self-study/youtube",
+    "expType": "self-study/youtube",
     "info": "Gained expertise in JavaScript fundamentals and advanced techniques for building dynamic and interactive web applications. Applied knowledge to create powerful and user-friendly websites.",
     "skills": [
       "JavaScript"
