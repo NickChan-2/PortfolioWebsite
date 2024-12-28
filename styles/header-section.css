@@ -9,7 +9,7 @@
   height: 500px;
   justify-content: space-between;
   font-family: Poppins, Roboto;
-  background-color: #011709; /* Background color applied to the whole viewport */
+
   position: sticky;
   top: 0;
   z-index: 100;
@@ -30,7 +30,8 @@
 
 .title{
   margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0;
+
   font-size: 20px;
   color: rgba(232, 230, 227);
   font-weight: 300;

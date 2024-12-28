@@ -10,7 +10,7 @@ html, body {
   flex-direction: row;
   justify-content: space-between;
   gap: 100px;
-  margin: 0px 320px;
+  margin: 0px 200px;
   padding: 0px 50px;
   /* Removed background color here */
   color: rgba(232, 230, 227, 0.8); /* 80% opacity */
