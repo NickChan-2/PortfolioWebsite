@@ -19,7 +19,8 @@ function renderExpList() {
 
     experience.forEach((exp) => { // Loop through each experience
       expHTML += ` 
-      <div class="course">
+      <a href="${exp.link}" target="_blank">
+            <div class="course">
         <h3 class="course-header">${exp.title} (${exp.expType})</h3>
           <div class="info-section">                
             <p class="info">${exp.info}</p>
@@ -27,7 +28,8 @@ function renderExpList() {
             <div class="skill">${exp.skills.join(', ')}</div> <!-- Fixed Skills -->
           </div>
         </div>
-      </div>`;
+      </div>
+      </a>`;
     });
 
     // Inject HTML into the DOM
