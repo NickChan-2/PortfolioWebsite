@@ -4,6 +4,7 @@ class Experience {
   expType;
   info;
   skills;
+  link;
 
   constructor(expDetails) {
     this.id = expDetails.id;
@@ -11,6 +12,7 @@ class Experience {
     this.expType = expDetails.expType;
     this.info = expDetails.info;
     this.skills = expDetails.skills;
+    this.link = expDetails.link;
 
   }
 }
