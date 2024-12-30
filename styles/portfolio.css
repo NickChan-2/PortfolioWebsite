@@ -2,7 +2,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #011709; 
+  background-color: rgb(1, 23, 9); 
   font-family: Poppins, Roboto;
 }
 
@@ -17,16 +17,43 @@ body {
 
 #cursor-glow {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(100, 255, 218, 0.6) 0%, rgba(100, 255, 218, 0) 70%);
-  pointer-events: none;
-  transform: translate(-50%, -50%); /* Keeps it centered */
-  transform-origin: center; /* Makes scaling grow outward from the center */
-  transition: transform 0.1s ease-out; /* Smooth animation */
-  z-index: 9999;
+  width: 600px; /* Even larger size for smoother transitions */
+  height: 600px;
+  border-radius: 50%; /* Circular shape */
+  pointer-events: none; /* Doesn't block clicks */
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  transition: transform 0.1s ease-out, filter 0.2s ease-out; /* Smooth animations */
+  z-index: 9999; /* Always on top */
+
+  /* Ultra subtle glow */
+  background: radial-gradient(
+    circle,
+    rgba(100, 255, 218, 0.08) 0%,   /* Fainter center */
+    rgba(100, 255, 218, 0.04) 30%, /* Softer fade */
+    rgba(100, 255, 218, 0.02) 60%, /* Almost invisible edges */
+    rgba(100, 255, 218, 0) 100%    /* Fully transparent outer edge */
+  );
+
+  /* Softer blur and larger spread */
+  filter: blur(75px); /* Max blur for smoother edges */
 }
+
+
+#cursor-glow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#noise)" opacity="0.03"/></svg>');
+  z-index: -1;
+}
+
+
+
+
+
+
 
 
 
