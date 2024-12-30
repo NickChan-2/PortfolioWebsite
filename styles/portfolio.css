@@ -36,7 +36,7 @@ body {
   );
 
   /* Softer blur and larger spread */
-  filter: blur(75px); /* Max blur for smoother edges */
+  filter: blur(100px); /* Max blur for smoother edges */
 }
 
 
