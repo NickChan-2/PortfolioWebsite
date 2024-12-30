@@ -53,10 +53,6 @@
   cursor: pointer;
 }
 
-.course:hover{
-
-}
-
 .skills-section{
   display: flex;
   flex-direction: row;

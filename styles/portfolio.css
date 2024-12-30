@@ -1,17 +1,42 @@
+
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #011709; /* Background color applied to the whole viewport */
+  background-color: #011709; 
   font-family: Poppins, Roboto;
 }
+
+
+/* General styles */
+body {
+  margin: 0;
+  min-height: 100vh; /* Ensures content can grow vertically */
+  overflow-x: hidden; /* Prevents horizontal scrollbars, but allows vertical scrolling */
+}
+
+
+#cursor-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.6) 0%, rgba(100, 255, 218, 0) 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Keeps it centered */
+  transform-origin: center; /* Makes scaling grow outward from the center */
+  transition: transform 0.1s ease-out; /* Smooth animation */
+  z-index: 9999;
+}
+
+
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 100px;
-  margin: 0px 200px;
-  padding: 0px 50px;
+  margin: 0px 116px;
+  padding: 0px 48px;
   /* Removed background color here */
   color: rgba(232, 230, 227, 0.8); /* 80% opacity */
   font-family: Poppins, Roboto;
@@ -21,7 +46,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 55%;
+  width: 53%;
   padding: 96px 0px;
   margin: 0px;
   font-family: Poppins, Roboto;
