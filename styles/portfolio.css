@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; /* Smooth transition between sections */
+}
 
 html, body {
   height: 100%;
@@ -6,7 +9,6 @@ html, body {
   font-family: Poppins, Roboto;
 }
 
-
 /* General styles */
 body {
   margin: 0;
@@ -14,30 +16,39 @@ body {
   overflow-x: hidden; /* Prevents horizontal scrollbars, but allows vertical scrolling */
 }
 
-
 #cursor-glow {
   position: absolute;
-  width: 600px; /* Even larger size for smoother transitions */
-  height: 600px;
-  border-radius: 50%; /* Circular shape */
-  pointer-events: none; /* Doesn't block clicks */
-  transform: translate(-50%, -50%);
-  transform-origin: center;
-  transition: transform 0.1s ease-out, filter 0.2s ease-out; /* Smooth animations */
-  z-index: 9999; /* Always on top */
+  width: calc(50px + 26vw);
+  height: calc(50px + 26vw);  
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.1s ease-out, filter 0.2s ease-out;
+  z-index: 9999;
 
-  /* Ultra subtle glow */
+  /* Background with HSLA gradient and noise overlay */
   background: radial-gradient(
     circle,
-    rgba(100, 255, 218, 0.08) 0%,   /* Fainter center */
-    rgba(100, 255, 218, 0.04) 30%, /* Softer fade */
-    rgba(100, 255, 218, 0.02) 60%, /* Almost invisible edges */
-    rgba(100, 255, 218, 0) 100%    /* Fully transparent outer edge */
-  );
+    hsla(160, 100%, 70%, 0.2) 0%,    /* Bright center */
+    hsla(160, 100%, 65%, 0.15) 10%, 
+    hsla(160, 100%, 60%, 0.12) 20%, 
+    hsla(160, 100%, 55%, 0.10) 30%, 
+    hsla(160, 100%, 50%, 0.08) 40%, 
+    hsla(160, 100%, 45%, 0.06) 50%, 
+    hsla(160, 100%, 40%, 0.04) 60%, 
+    hsla(160, 100%, 35%, 0.02) 75%, 
+    hsla(160, 100%, 30%, 0) 100%    /* Transparent edges */
+  ),
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#noise)" opacity="0.05"/></svg>');
 
-  /* Softer blur and larger spread */
-  filter: blur(100px); /* Max blur for smoother edges */
+  /* High blur for smooth diffusion */
+  filter: blur(150px);
+
+  /* Pre-optimization for smoother performance */
+  will-change: transform, filter;
 }
+
+
 
 
 #cursor-glow::before {
@@ -48,14 +59,6 @@ body {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#noise)" opacity="0.03"/></svg>');
   z-index: -1;
 }
-
-
-
-
-
-
-
-
 
 .container {
   display: flex;

@@ -41,3 +41,15 @@
 .nav-links li a:hover .nav-name {
   color: #E8E6E3; /* Change text color on hover */
 }
+
+/* Active Link - Same as Hover Effect */
+.nav-links li a.active {
+  color: #E8E6E3; /* Same as hover text color */
+}
+
+/* Active Indicator - Same as Hover Indicator */
+.nav-links li a.active .nav-indicator {
+  width: 64px; /* Same expanded width as hover */
+  height: 2px; /* Same height as hover */
+  background-color: #E8E6E3; /* Same color as hover */
+}
