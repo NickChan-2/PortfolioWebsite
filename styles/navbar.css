@@ -6,7 +6,6 @@
   margin: 0;
   margin-top: 40px;
   padding: 0;
-  font-family: Poppins, Roboto;
 }
 
 .nav-links li {
@@ -32,24 +31,13 @@
   transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Transition for width, height, and color */
 }
 
-.nav-links li a:hover .nav-indicator {
+.nav-links li a:hover .nav-indicator, .nav-links li a.active .nav-indicator {
   width: 64px; /* New width on hover */
   height: 2px; /* New height on hover */
   background-color: #E8E6E3; /* New background color on hover */
 }
 
-.nav-links li a:hover .nav-name {
+.nav-links li a:hover .nav-name, .nav-links li a.active {
   color: #E8E6E3; /* Change text color on hover */
 }
 
-/* Active Link - Same as Hover Effect */
-.nav-links li a.active {
-  color: #E8E6E3; /* Same as hover text color */
-}
-
-/* Active Indicator - Same as Hover Indicator */
-.nav-links li a.active .nav-indicator {
-  width: 64px; /* Same expanded width as hover */
-  height: 2px; /* Same height as hover */
-  background-color: #E8E6E3; /* Same color as hover */
-}

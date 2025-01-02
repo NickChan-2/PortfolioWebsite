@@ -1,15 +1,14 @@
 import { experience, loadExperience } from "../data/experience.js";
 import { project, loadProject} from "../data/projects.js";
 
-console.log('open');
-
 // Use async/await to ensure data loads before rendering
-async function loadAndRenderExperience() {
+async function loadAndRender() {
   try {
     // Wait until data is loaded
     await loadExperience();
-    console.log('Experience loaded:', experience); // Debugging
     renderExpList();
+    await loadProject();
+    renderProjList();
   } catch (error) {
     console.error('Error loading experience:', error);
   }
@@ -45,21 +44,6 @@ function renderExpList() {
   document.querySelector('.js-exp-list').innerHTML = expHTML;
 }
 
-
-loadAndRenderExperience(); // Call the async function to load and render
-
-// Use async/await to ensure data loads before rendering
-async function loadAndRenderProject() {
-  try {
-    // Wait until data is loaded
-    await loadProject();
-    console.log('project loaded:', project); // Debugging
-    renderProjList();
-  } catch (error) {
-    console.error('Error loading experience:', error);
-  }
-}
-
 function renderProjList() {
   let projHTML = '';
 
@@ -82,6 +66,6 @@ function renderProjList() {
   document.querySelector('.js-proj-list').innerHTML = projHTML;
 }
 
-loadAndRenderProject();
+loadAndRender(); // Call the async function to load and render
 
-console.log('end');
+

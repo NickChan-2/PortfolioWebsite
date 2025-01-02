@@ -24,9 +24,6 @@ export async function loadExperience() {
     // Fetch JSON data with cache disabled
     const response = await fetch('backend/experience.json', { cache: 'no-store' });
 
-    // Debug the response
-    console.log('Fetch Response:', response);
-
     // Check for HTTP errors
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -35,14 +32,8 @@ export async function loadExperience() {
     // Parse the JSON data
     const experienceData = await response.json();
 
-    // Debug the loaded data
-    console.log('Data Received:', experienceData);
-
     // Map the JSON data into Experience objects
     experience = experienceData.map(expDetails => new Experience(expDetails));
-
-    // Debug the mapped experience array
-    console.log('Mapped Experience:', experience);
   } catch (error) {
     console.error('Error loading experience:', error); // Log errors
   }
