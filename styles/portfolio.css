@@ -18,8 +18,8 @@ body {
 
 #cursor-glow {
   position: absolute;
-  width: calc(50px + 26vw);
-  height: calc(50px + 26vw);  
+  width: calc(50px + 22vw);
+  height: calc(50px + 22vw);  
   border-radius: 50%;
   pointer-events: none;
   transform: translate3d(-50%, -50%, 0);
