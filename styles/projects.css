@@ -22,14 +22,11 @@
   transition: color 0.3s ease; /* Transition for text color */
 }
 
-.project-title{
+.project-title, .project-description{
   margin: 0;
   padding: 0;
 }
-.project-description{
-  margin: 0;
-  padding: 0;
-}
+
 .img-section{
   width: 80%;
   height: 100%;
