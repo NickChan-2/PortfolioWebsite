@@ -32,22 +32,42 @@
   {
     "id": 4,
     "title": "HTML & CSS",
-    "expType": "self-study/youtube",
+    "expType": "self-study",
     "info": "Completed a course covering foundational and advanced topics in web design, creating responsive and visually engaging web pages.",
     "skills": [
        "HTML",
        "CSS"
     ],
-    "link": "https://youtu.be/G3e-cpL7ofc?si=Filo4IxvEvSikT3V"
+    "link": "https://youtu.be/G3e-cpL7ofc?si=P13Xh-9hKT63ADDN&t=1"
   },
   {
     "id": 5,
     "title": "JavaScript",
-    "expType": "self-study/youtube",
+    "expType": "self-study",
     "info": "Gained expertise in JavaScript fundamentals and advanced techniques for building dynamic and interactive web applications. Applied knowledge to create powerful and user-friendly websites.",
     "skills": [
       "JavaScript"
     ],
-    "link": "https://youtu.be/EerdGm-ehJQ?si=CA-FSbZqNXPyScZy"
+    "link": "https://youtu.be/EerdGm-ehJQ?si=nFRAnn7ucrvf9tTR&t=1"
+  },
+  {
+    "id": 6,
+    "title": "Git and Github",
+    "expType": "self-study",
+    "info": "Gained a basis in git and github properties like branching, merging, pushing, etc.",
+    "skills": [
+      "Git"
+    ],
+    "link": "https://youtu.be/Q1kHG842HoI?si=fFc3l1A1l4Lrk6hn"
+  },
+  {
+    "id": 7,
+    "title": "Object Oriented Programming basis",
+    "expType": "self-study",
+    "info": "Gained a basis in Object Oriented Programming. Gained an understanding in concepts such as inheritance, polymorphism, and encapsulation",
+    "skills": [
+      "C++"
+    ],
+    "link": "https://youtu.be/m1fJjNLzRag?si=lnGlXjcwfRPT_uOo&t=1"
   }
 ]
