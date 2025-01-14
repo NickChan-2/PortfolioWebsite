@@ -67,7 +67,7 @@
   margin-right: 10px;
 }
 
-.github-logo:hover, .linkedin-logo:hover {
+.github-logo:hover, .linkedin-logo:hover, .contact-icon:hover {
   fill:  rgba(232, 230, 227, 0.8);
 }
 
