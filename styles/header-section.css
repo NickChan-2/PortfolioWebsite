@@ -15,6 +15,20 @@
   z-index: 100;
 }
 
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    width: 100%; /* Full width at the top */
+    height: auto; /* Let height adjust dynamically */
+    padding: 0px; /* Reduce padding */
+    margin: 0px;
+    position: relative; /* Ensure it flows naturally in the layout */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+}
+
 .title-section {
   display: flex;
   flex-direction: column;
