@@ -59,7 +59,7 @@
   padding: 0px;
 }
 
-.github-logo, .linkedin-logo {
+.github-logo, .linkedin-logo, .contact-icon {
   width: 20px; /* Adjust size */
   height: 20px;
   fill: rgba(232, 230, 227, 0.8);
@@ -71,13 +71,15 @@
   fill:  rgba(232, 230, 227, 0.8);
 }
 
-.github-button, .linkedin-button {
+.github-button, .linkedin-button, .contact-button {
   background: transparent; /* Transparent button background */
   border: none; /* Remove button border */
   cursor: pointer;
   padding: 0;
 }
 
-.github-button a, .linkedin-button a {
+.github-button a, .linkedin-button a, .contact-button a {
   text-decoration: none;
 }
+
+
