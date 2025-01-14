@@ -84,25 +84,28 @@ a:focus {
   outline-offset: 4px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    padding: 0px 24px;
-    gap: 50px;
+    margin: 0;
+    padding: 16px;
   }
-
   .main {
     width: 100%;
-    padding: 48px 0px;
-    gap: 80px;
+    padding: 0;
   }
+}
 
-  #cursor-glow {
-    width: calc(30px + 30vw);
-    height: calc(30px + 30vw);
-    filter: blur(100px);
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto;
+    padding: 24px 0;
   }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .line-transition{
