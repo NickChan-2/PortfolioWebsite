@@ -86,7 +86,6 @@ a:focus {
 
 @media (max-width: 768px) {
   .container {
-    width: max-content; /* Ensure the container can grow horizontally if needed */
     flex-direction: column;
     margin: 0;
     padding: 16px;
@@ -106,7 +105,7 @@ a:focus {
 }
 
 body {
-  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-x: hidden; /* Enable horizontal scrolling */
 }
 
 .line-transition{
