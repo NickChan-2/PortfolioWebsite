@@ -1,26 +1,6 @@
 [
   {
     "id": 1,
-    "title": "Calculus I & II",
-    "expType": "SDSU",
-    "info": "Acquired a strong foundation in differential and integral calculus, with practical applications in mathematical modeling and problem-solving.",
-    "skills": [
-       "C++"
-    ],
-    "link": "https://www.sdstate.edu/mccomish-electrical-engineering-computer-science/cs-undergraduate"
-  },
-  {
-    "id": 2,
-    "title": "CSC 250",
-    "expType": "SDSU",
-    "info": "Learned essential programming concepts, including control structures, functions, and object-oriented programming, using the C++ language.",
-    "skills": [
-       "C++"
-    ],
-    "link": "https://www.sdstate.edu/mccomish-electrical-engineering-computer-science/cs-undergraduate"
-  },
-  {
-    "id": 3,
     "title": "Data Structures and Algorithms",
     "expType": "SDSU",
     "info": "Studied and implemented fundamental data structures such as binary trees, graphs, stacks, and queues. Gained proficiency in searching and sorting algorithms and memory management techniques.",
@@ -29,8 +9,9 @@
     ],
     "link": "https://www.sdstate.edu/mccomish-electrical-engineering-computer-science/cs-undergraduate"
   },
+
   {
-    "id": 4,
+    "id": 2,
     "title": "HTML & CSS",
     "expType": "self-study",
     "info": "Completed a course covering foundational and advanced topics in web design, creating responsive and visually engaging web pages.",
@@ -41,7 +22,7 @@
     "link": "https://youtu.be/G3e-cpL7ofc?si=P13Xh-9hKT63ADDN&t=1"
   },
   {
-    "id": 5,
+    "id": 3,
     "title": "JavaScript",
     "expType": "self-study",
     "info": "Gained expertise in JavaScript fundamentals and advanced techniques for building dynamic and interactive web applications. Applied knowledge to create powerful and user-friendly websites.",
@@ -51,7 +32,7 @@
     "link": "https://youtu.be/EerdGm-ehJQ?si=nFRAnn7ucrvf9tTR&t=1"
   },
   {
-    "id": 6,
+    "id": 4,
     "title": "Git and Github",
     "expType": "self-study",
     "info": "Gained a basis in git and github properties like branching, merging, pushing, etc.",
@@ -60,14 +41,26 @@
     ],
     "link": "https://youtu.be/Q1kHG842HoI?si=fFc3l1A1l4Lrk6hn"
   },
+  
   {
-    "id": 7,
-    "title": "Object Oriented Programming basis",
-    "expType": "self-study",
-    "info": "Gained a basis in Object Oriented Programming. Gained an understanding in concepts such as inheritance, polymorphism, and encapsulation",
+    "id": 5,
+    "title": "Object Oriented Programming",
+    "expType": "SDSU",
+    "info": "Buit foundational knowledge in Object-Oriented programming learning components such as polymorphism, inheritance, overloading and encapsulation.",
     "skills": [
-      "C++"
+      "C#"
     ],
-    "link": "https://youtu.be/m1fJjNLzRag?si=lnGlXjcwfRPT_uOo&t=1"
+    "link": "https://www.sdstate.edu/mccomish-electrical-engineering-computer-science/cs-undergraduate"
+  },
+
+  {
+    "id": 6,
+    "title": "Database Managament Systems",
+    "expType": "SDSU",
+    "info": "This course explores database fundamentals, including design, data manipulation, and DBMS usage, building practical skills for managing structured data.",
+    "skills": [
+      "PostgreSQL"
+    ],
+    "link": "https://www.sdstate.edu/mccomish-electrical-engineering-computer-science/cs-undergraduate"
   }
 ]
