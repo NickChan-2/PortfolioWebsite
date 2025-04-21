@@ -1,5 +1,20 @@
 [
   {
+    "id": 7,
+    "title": "Software Design Student",
+    "expType": "Daktronics",
+    "info": "Contributed to software development and testing processes, including manual and automated regression testing. Worked with technologies like C#, and JavaScript in Visual Studio. Collaborated with team members to debug, write unit tests, and maintain high code quality. Gained experience with tools such as Azure while supporting cloud-based services and helping resolve user issues.",
+    "skills": [
+      "C#",
+      "JavaScript",
+      "Azure",
+      "Visual Studio",
+      "Testing",
+      "Git"
+    ],
+    "link": "https://www.daktronics.com/en-us/employment/internships-and-students"
+  },
+  {
     "id": 1,
     "title": "Data Structures and Algorithms",
     "expType": "SDSU",
@@ -63,4 +78,5 @@
     ],
     "link": "https://www.sdstate.edu/mccomish-electrical-engineering-computer-science/cs-undergraduate"
   }
+  
 ]
